@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- App Theme Colors - iOS 26 Liquid Glass -->
+    <color name="primary">#A4D7E1</color>
+    <color name="primary_dark">#7CB8C4</color>
+    <color name="primary_variant">#78C8D9</color>
+    <color name="secondary">#A496E2</color>
+    <color name="accent">#A496E2</color>
+    <color name="accent_green">#7ED321</color>
+
+    <!-- Glass Morphism -->
+    <color name="glass_start">#4DA4D7E1</color>
+    <color name="glass_mid">#40A4B8CF</color>
+    <color name="glass_end">#33A496E2</color>
+    <color name="glass_border">#33FFFFFF</color>
+    <color name="glass_overlay">#1AFFFFFF</color>
+
+    <!-- Button Gradients -->
+    <color name="button_gradient_start">#A4D7E1</color>
+    <color name="button_gradient_mid">#9FC0DA</color>
+    <color name="button_gradient_end">#A496E2</color>
+
+
+    <!-- Status -->
+    <color name="success">#7ED321</color>
+    <color name="error">#FF3B30</color>
+    <color name="warning">#FF9500</color>
+    <color name="info">#5AC8FA</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#CCFFFFFF</color>
+    <color name="text_tertiary">#99FFFFFF</color>
+    <color name="text_disabled">#66FFFFFF</color>
+
+    <!-- Background -->
+    <color name="background_gradient_start">#6A89CC</color>
+    <color name="background_gradient_mid">#7B68C4</color>
+    <color name="background_gradient_end">#8C5AB8</color>
+
+    <!-- Bottom Navigation -->
+    <color name="bottom_nav_selected">#FFFFFF</color>
+    <color name="bottom_nav_unselected">#80FFFFFF</color>
+
+    <!-- Input Fields -->
+
+    <color name="input_text">#FFFFFF</color>
+
+    <!-- Switches -->
+
+
+
+    <!-- Bottom Navigation Color -->
+
+</resources>

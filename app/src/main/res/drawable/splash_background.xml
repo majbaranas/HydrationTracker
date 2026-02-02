@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+
+    <!-- Background -->
+    <item android:drawable="@drawable/gradient_background"/>
+
+    <!-- Logo Container -->
+    <item
+        android:width="200dp"
+        android:height="200dp"
+        android:gravity="center">
+
+        <shape android:shape="rectangle">
+            <corners android:radius="100dp"/>
+            <solid android:color="#33FFFFFF"/>
+        </shape>
+    </item>
+
+    <!-- Water Drop Icon -->
+    <item
+        android:width="120dp"
+        android:height="120dp"
+        android:gravity="center">
+        <vector
+            android:width="120dp"
+            android:height="120dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:fillColor="@color/primary"
+                android:pathData="M12,2C12,2 6,8 6,13C6,16.31 8.69,19 12,19C15.31,19 18,16.31 18,13C18,8 12,2 12,2Z"/>
+            <path
+                android:fillColor="#FFFFFF"
+                android:pathData="M12,5.69C10.3,7.69 8,10.71 8,13C8,15.21 9.79,17 12,17C14.21,17 16,15.21 16,13C16,10.71 13.7,7.69 12,5.69M12,15.5C10.62,15.5 9.5,14.38 9.5,13C9.5,11.5 10.5,9.97 12,8.44C13.5,9.97 14.5,11.5 14.5,13C14.5,14.38 13.38,15.5 12,15.5Z"/>
+        </vector>
+    </item>
+
+</layer-list>

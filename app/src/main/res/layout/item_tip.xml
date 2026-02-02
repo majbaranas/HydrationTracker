@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hydration.tracker.ui.components.GlassCard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tipCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="16dp"
+    android:padding="20dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/tipIcon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:src="@drawable/ic_morning"
+            android:background="@drawable/circle_background"
+            android:padding="12dp"
+            app:tint="@color/text_primary"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:src="@drawable/ic_morning" />
+
+        <TextView
+            android:id="@+id/tipTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tip Title"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toTopOf="@id/tipIcon"
+            app:layout_constraintStart_toEndOf="@id/tipIcon"
+            app:layout_constraintEnd_toStartOf="@id/shareButton"
+            tools:text="Start Your Day Right" />
+
+        <TextView
+            android:id="@+id/tipDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Tip description goes here"
+            android:textColor="#CCFFFFFF"
+            android:textSize="14sp"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@id/tipIcon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="Drink a glass of water immediately after waking up to kickstart your metabolism." />
+
+        <ImageButton
+            android:id="@+id/shareButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_share"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/share_tip"
+            app:tint="@color/accent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.hydration.tracker.ui.components.GlassCard>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Welcome Card -->
+        <com.hydration.tracker.ui.components.GlassCard
+            android:id="@+id/welcomeCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/welcomeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/welcome_user"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:fontFamily="sans-serif-medium"
+                    tools:text="Welcome, John" />
+
+                <TextView
+                    android:id="@+id/goalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/daily_goal"
+                    android:textColor="#CCFFFFFF"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    tools:text="Daily Goal: 2L" />
+
+            </LinearLayout>
+
+        </com.hydration.tracker.ui.components.GlassCard>
+
+        <!-- Water Progress Card -->
+        <com.hydration.tracker.ui.components.GlassCard
+            android:id="@+id/waterProgressCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="0dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/welcomeCard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/progressTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:padding="1dp"
+                    android:text="@string/today_progress"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!-- Water Wave View -->
+                <com.hydration.tracker.ui.components.WaterWaveView
+                    android:id="@+id/waterWaveView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/progressTitle"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <TextView
+                    android:id="@+id/currentAmountText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0ml"
+                    android:textColor="@android:color/white"
+                    android:textSize="32sp"
+                    android:fontFamily="sans-serif-bold"
+                    app:layout_constraintTop_toTopOf="@id/waterWaveView"
+                    app:layout_constraintBottom_toBottomOf="@id/waterWaveView"
+                    app:layout_constraintStart_toStartOf="@id/waterWaveView"
+                    app:layout_constraintEnd_toEndOf="@id/waterWaveView" />
+
+                <!-- Progress Bar -->
+                <com.hydration.tracker.ui.components.AnimatedProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="365dp"
+                    android:layout_height="12dp"
+                    android:layout_marginTop="24dp"
+                    app:layout_constraintTop_toBottomOf="@id/waterWaveView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <!-- Success Icon -->
+                <ImageView
+                    android:id="@+id/successIcon"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_check_circle"
+                    android:visibility="gone"
+                    app:tint="@color/success"
+                    app:layout_constraintTop_toTopOf="@id/waterWaveView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:visibility="visible" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.hydration.tracker.ui.components.GlassCard>
+
+        <!-- Quick Actions Card -->
+        <com.hydration.tracker.ui.components.GlassCard
+            android:id="@+id/quickActionsCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@id/waterProgressCard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quick_add"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginBottom="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/add250mlButton"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:text="250ml"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="@color/background_gradient_start"
+                        app:cornerRadius="16dp"
+                        android:layout_marginEnd="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/add500mlButton"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:text="500ml"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="@color/background_gradient_start"
+                        app:cornerRadius="16dp"
+                        android:layout_marginEnd="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/add750mlButton"
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:text="750ml"
+                        android:textColor="@android:color/white"
+                        android:backgroundTint="@color/background_gradient_start"
+                        app:cornerRadius="16dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.hydration.tracker.ui.components.GlassCard>
+
+        <!-- Intake History Card -->
+        <com.hydration.tracker.ui.components.GlassCard
+            android:id="@+id/intakeHistoryCard"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintTop_toBottomOf="@id/quickActionsCard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Title with Reset Button -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/historyTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/intake_history"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:fontFamily="sans-serif-medium"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/resetButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="reset"
+                        android:textColor="@color/text_primary"
+                        android:textSize="14sp"
+                        style="@style/Widget.MaterialComponents.Button.TextButton"
+                        app:iconTint="@color/error"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!-- Recycler View -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/intakeRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:clipToPadding="false"
+                    android:overScrollMode="never"
+                    tools:listitem="@layout/item_water_intake"
+                    tools:itemCount="3" />
+
+                <!-- Empty State -->
+                <TextView
+                    android:id="@+id/emptyStateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="no water intake today"
+                    android:textColor="#CCFFFFFF"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:padding="24dp"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+            </LinearLayout>
+
+        </com.hydration.tracker.ui.components.GlassCard>
+
+        <!-- FAB -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addWaterFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add"
+            android:contentDescription="@string/add_water"
+            app:tint="@android:color/white"
+            app:backgroundTint="@color/accent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="80dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <!-- Ripple View for Animation -->
+        <View
+            android:id="@+id/rippleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <!-- Celebration Animation -->
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/celebrationAnimation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:lottie_rawRes="@raw/celebration"
+            app:lottie_autoPlay="false"
+            app:lottie_loop="false" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

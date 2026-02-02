@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <!-- Splash Theme -->
+    <style name="Theme.HydrationTracker.Splash" parent="Theme.HydrationTracker">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="TextAppearance.Title" parent="TextAppearance.MaterialComponents.Headline5">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.Subtitle" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.Body" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.Caption" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textColor">@color/text_tertiary</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Widget.App.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="backgroundTint">@color/button_gradient_start</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="Widget.App.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/white</item>
+        <item name="strokeColor">@color/glass_border</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="cornerRadius">28dp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Widget.App.Button.Text" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- FAB Style -->
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/accent</item>
+        <item name="tint">@color/white</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <!-- Card Style -->
+    <style name="Widget.App.Card" parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/glass_start</item>
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">8dp</item>
+        <item name="strokeColor">@color/glass_border</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <!-- Bottom Navigation Style -->
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_color</item>
+        <item name="itemTextColor">@color/bottom_nav_color</item>
+        <item name="itemRippleColor">@color/glass_overlay</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="itemTextAppearanceActive">@style/TextAppearance.BottomNav.Active</item>
+        <item name="itemTextAppearanceInactive">@style/TextAppearance.BottomNav.Inactive</item>
+    </style>
+
+    <style name="TextAppearance.BottomNav.Active" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="TextAppearance.BottomNav.Inactive" parent="TextAppearance.MaterialComponents.Caption">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+</resources>
