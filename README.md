@@ -33,12 +33,17 @@ A modern Android application designed to help users maintain optimal hydration l
 
 ## 📸 Screenshots
 
-![Splash Screen](Hydration_Tracker_ScreenShots/IMG-20251120-WA0017.jpg)
-![Login Screen](Hydration_Tracker_ScreenShots/IMG-20251120-WA0018.jpg)
-![Home Screen](Hydration_Tracker_ScreenShots/IMG-20251120-WA0019.jpg)
-![Water Intake Logging](Hydration_Tracker_ScreenShots/IMG-20251120-WA0020.jpg)
-![Progress Charts](Hydration_Tracker_ScreenShots/IMG-20251120-WA0021.jpg)
-![User Profile](Hydration_Tracker_ScreenShots/IMG-20251120-WA0022.jpg)
+### Main Screens
+
+| Splash | Login | Home |
+|------|------|------|
+| <img src="Hydration_Tracker_ScreenShots/IMG-20251120-WA0017.jpg" width="240"/> | <img src="Hydration_Tracker_ScreenShots/IMG-20251120-WA0018.jpg" width="240"/> | <img src="Hydration_Tracker_ScreenShots/IMG-20251120-WA0019.jpg" width="240"/> |
+
+### App Features
+
+| Water Logging | Progress Charts | Profile |
+|--------------|----------------|---------|
+| <img src="Hydration_Tracker_ScreenShots/IMG-20251120-WA0020.jpg" width="240"/> | <img src="Hydration_Tracker_ScreenShots/IMG-20251120-WA0021.jpg" width="240"/> | <img src="Hydration_Tracker_ScreenShots/IMG-20251120-WA0022.jpg" width="240"/> |
 
 ## 🛠️ Tech Stack
 
