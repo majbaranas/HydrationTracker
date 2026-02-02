@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Suivi d\'Hydratation</string>
+
+
+    <!-- Add these strings -->
+    <string name="select_language">Sélectionner la langue</string>
+    <string name="language">Langue</string>
+
+    <!-- Auth -->
+    <string name="login">Connexion</string>
+    <string name="sign_up">S\'inscrire</string>
+    <string name="email">Email</string>
+    <string name="password">Mot de passe</string>
+    <string name="username">Nom d\'utilisateur</string>
+    <string name="confirm_password">Confirmer le mot de passe</string>
+    <string name="login_subtitle">Restez hydraté, restez en bonne santé</string>
+    <string name="create_account">Créer un compte</string>
+    <string name="dont_have_account">Vous n\'avez pas de compte?</string>
+    <string name="already_have_account">Vous avez déjà un compte?</string>
+
+    <!-- Errors -->
+    <string name="error_email_required">L\'email est requis</string>
+    <string name="error_email_invalid">Adresse email invalide</string>
+    <string name="error_password_required">Le mot de passe est requis</string>
+    <string name="error_password_short">Le mot de passe doit contenir au moins 6 caractères</string>
+    <string name="error_password_mismatch">Les mots de passe ne correspondent pas</string>
+    <string name="error_username_required">Le nom d\'utilisateur est requis</string>
+    <string name="error_invalid_amount">Veuillez entrer un montant valide</string>
+    <string name="error_invalid_goal">Veuillez entrer un objectif valide</string>
+
+    <!-- Password Strength -->
+    <string name="password_weak">Faible</string>
+    <string name="password_medium">Moyen</string>
+    <string name="password_strong">Fort</string>
+
+    <!-- Home -->
+    <string name="welcome_user">Bienvenue, %s</string>
+    <string name="daily_goal">Objectif quotidien: %s</string>
+    <string name="add_water">Ajouter de l\'eau</string>
+    <string name="quick_add">Ajout rapide</string>
+    <string name="today_progress">Progrès d\'aujourd\'hui</string>
+    <string name="intake_history">Historique de consommation</string>
+    <string name="empty_intake_message">Aucune eau enregistrée aujourd\'hui.\nCommencez à suivre votre hydratation!</string>
+    <string name="goal_reached_title">🎉 Objectif atteint!</string>
+    <string name="goal_reached_message">Félicitations! Vous avez atteint votre objectif d\'hydratation quotidien. Continuez comme ça!</string>
+    <string name="awesome">Génial!</string>
+
+    <!-- Progress -->
+    <string name="weekly_progress">Progrès hebdomadaire</string>
+    <string name="statistics">Statistiques</string>
+    <string name="average">Moyenne</string>
+    <string name="total">Total</string>
+    <string name="best_day">Meilleur jour</string>
+    <string name="day_streak">Série de %d jours</string>
+
+    <!-- Tips -->
+    <string name="hydration_tips">Conseils d\'hydratation</string>
+    <string name="share_tip">Partager le conseil</string>
+    <string name="share_suffix">#SuiviHydratation #RestezHydraté</string>
+
+    <string name="tip_1_title">Commencez bien la journée</string>
+    <string name="tip_1_description">Buvez un verre d\'eau immédiatement après le réveil pour stimuler votre métabolisme et réhydrater votre corps.</string>
+
+    <string name="tip_2_title">Avant chaque repas</string>
+    <string name="tip_2_description">Buvez de l\'eau 30 minutes avant les repas pour faciliter la digestion et contrôler les portions.</string>
+
+    <string name="tip_3_title">Pendant l\'exercice</string>
+    <string name="tip_3_description">Buvez de l\'eau toutes les 15-20 minutes pendant l\'exercice pour maintenir des niveaux d\'hydratation optimaux.</string>
+
+    <string name="tip_4_title">Emportez une bouteille</string>
+    <string name="tip_4_description">Gardez une bouteille d\'eau réutilisable avec vous tout au long de la journée comme rappel visuel.</string>
+
+    <string name="tip_5_title">Définir des rappels</string>
+    <string name="tip_5_description">Activez les notifications dans les paramètres pour recevoir des rappels réguliers de boire de l\'eau.</string>
+
+    <string name="tip_6_title">Surveiller la couleur de l\'urine</string>
+    <string name="tip_6_description">Vérifiez la couleur de votre urine - jaune pâle indique une bonne hydratation, les couleurs plus foncées signifient que vous devez boire plus d\'eau.</string>
+
+    <!-- Profile -->
+    <string name="profile">Profil</string>
+    <string name="settings">Paramètres</string>
+    <string name="daily_goal_settings">Objectif quotidien</string>
+    <string name="notifications">Notifications</string>
+    <string name="reminder_interval">Intervalle de rappel</string>
+    <string name="set_goal">Définir l\'objectif</string>
+    <string name="logout">Se déconnecter</string>
+    <string name="logout_title">Déconnexion</string>
+    <string name="logout_message">Êtes-vous sûr de vouloir vous déconnecter?</string>
+    <string name="cancel">Annuler</string>
+    <string name="member_since">Membre depuis %s</string>
+    <string name="minutes_format">%d minutes</string>
+
+    <!-- Notifications -->
+    <string name="reminder_title">Il est temps de s\'hydrater! 💧</string>
+    <string name="reminder_message">N\'oubliez pas de boire de l\'eau</string>
+    <string name="reminder_channel_name">Rappels d\'hydratation</string>
+    <string name="reminder_channel_description">Rappels réguliers pour boire de l\'eau tout au long de la journée</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_home">Accueil</string>
+    <string name="nav_progress">Progrès</string>
+    <string name="nav_tips">Conseils</string>
+    <string name="nav_profile">Profil</string>
+
+    <!-- General -->
+    <string name="back">Retour</string>
+    <string name="save">Enregistrer</string>
+    <string name="delete">Supprimer</string>
+    <string name="share">Partager</string>
+</resources>
